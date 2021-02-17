@@ -1,0 +1,114 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.lightBlueAccent,
+          title: Center(
+            child: Text(
+              "QUIZOO",
+              style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  letterSpacing: 5.0),
+            ),
+          ),
+        ),
+        body: SafeArea(
+          child: Container(
+            color: Colors.lightBlueAccent,
+            height: double.infinity,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  height: 100.0,
+                  child: Text(
+                    "What Shape Does Not Have Four Sides?",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    child: RaisedButton(
+                      onPressed: () {},
+                      color: Colors.white,
+                      child: Center(
+                        child: Text(
+                          "Rectangle",
+                          style: TextStyle(
+                              fontSize: 20.0,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    focusColor: Colors.green,
+                    child: Center(
+                      child: Text(
+                        "Parallelogram",
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    child: Center(
+                      child: Text(
+                        "Rhombus",
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: RaisedButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    child: Center(
+                      child: Text(
+                        "Triangle",
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
